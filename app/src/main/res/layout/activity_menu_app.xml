@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="info.androidhive.firebase.MenuAppActivity"
+    >
+    <ImageView
+        android:id="@+id/main_backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/cafe" />
+
+
+    <TextView
+
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black_overlay"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:lines="2"
+        android:text="Bienvenido a la cafetería RenesCoffe "
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/title"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5">
+                <!--<Button
+                    android:id="@+id/random_combos_button"
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Generar combos"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/rounded_border" />-->
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5">
+                <!--<Button
+                    android:id="@+id/menu_details"
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Listar combos"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/rounded_border"/> -->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <!-- <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5">
+                <Button
+                    android:id="@+id/products_detail"
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Listar productos"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/rounded_border" />
+            </RelativeLayout> -->
+
+            <Button
+                android:id="@+id/menu_button"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Menú Cafetería"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rounded_border" />
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"></RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <!-- <RelativeLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:layout_weight="0.5"></RelativeLayout> -->
+
+            <Button
+                android:id="@+id/gallery_button"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Cambiar Fondo"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_border"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/load_localdata_button"
+                android:layout_toStartOf="@+id/load_localdata_button"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5">
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/load_localdata_button"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Cargar Datos Locales"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_border"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/daily_info_button"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/daily_info_button"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Ayuda"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_border"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/configuracion"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Configuracion usuario"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_border"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

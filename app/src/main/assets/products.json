@@ -1,0 +1,18 @@
+{
+
+  "products": [
+    {
+      "name": "Queso",
+      "cost": 2000,
+      "weight": 51,
+      "type": "acompañamientos"
+    },
+    {
+      "name": "Jamón",
+      "cost": 1500,
+      "weight": 101,
+      "type": "acompañamientos"
+    }
+  ]
+
+}

@@ -1,0 +1,17 @@
+{
+
+  "help": [
+    {
+      "name": "Botón Menú Cafetería",
+      "cost": 751,
+      "weight": 567,
+      "type": "Este botón permite armar tu menú personalizado, visualizar la lista de precios y ver los combos disponibles."
+    },
+    {
+      "name": "Botón Ayuda",
+      "cost": 751,
+      "weight": 567,
+      "type": "Este botón permite ver las acciones de cada botón del menú de la aplicación."
+    }
+  ]
+}
