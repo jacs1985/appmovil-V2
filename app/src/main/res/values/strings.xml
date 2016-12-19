@@ -36,4 +36,5 @@
     <string name="mapa_ayuda_sub">2_aqui iba algo</string>
     <string name="listo">3aqui iba algo</string>
     <string name="listo_sub">3_aqui iba algo</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

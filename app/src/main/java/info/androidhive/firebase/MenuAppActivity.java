@@ -38,7 +38,7 @@ public class MenuAppActivity extends AppCompatActivity implements View.OnClickLi
     private Button menuButton;
     private Button configuracion;
     private Button dailyInfoButton;
-
+    private Button MapButton;
     private RelativeLayout menuBackGround;
     private Menu myMenu;
     private ProgressBar progressBar;
@@ -90,6 +90,8 @@ public class MenuAppActivity extends AppCompatActivity implements View.OnClickLi
         dailyInfoButton = (Button) findViewById(R.id.daily_info_button);
         dailyInfoButton.setOnClickListener(this);
 
+        MapButton = (Button) findViewById(R.id.button_map);
+        MapButton.setOnClickListener(this);
 
         defaultsObjects();
         //defaultMenu();
@@ -157,9 +159,12 @@ public class MenuAppActivity extends AppCompatActivity implements View.OnClickLi
                 startActivity(productsListIntent);
                 break;*/
 
-            /*case R.id.gallery_button:
-                GalleryManager.getInstance(this, this).selectImageFromGallery();
-                break;*/
+
+            case R.id.button_map:
+                Intent map  = new Intent(MenuAppActivity.this, MapsActivity.class);
+                startActivity(map);
+
+                break;
 
             case R.id.menu_button:
                 Intent pizzaIntent = new Intent(MenuAppActivity.this, PizzaCustom.class);
