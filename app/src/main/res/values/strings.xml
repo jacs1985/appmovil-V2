@@ -27,6 +27,13 @@
     <string name="btn_remove">Remover</string>
     <string name="btn_sign_out">Sign Out</string>
     <string name="lbl_forgot_password">Olvidaste password?</string>
-    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
-    <string name="rosita">aqui iba algo</string>
+    <string name="forgot_password_msg">Solo necesitas tu Email registrado para poder enviar las instrucciones para resetear tu password.</string>
+    <string name="aceptar">Aceptat</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="bienvenido">1aqui iba algo</string>
+    <string name="bienvenido_sub">1_aqui iba algo_su</string>
+    <string name="mapa_ayuda">2aqui iba algo</string>
+    <string name="mapa_ayuda_sub">2_aqui iba algo</string>
+    <string name="listo">3aqui iba algo</string>
+    <string name="listo_sub">3_aqui iba algo</string>
 </resources>

@@ -1,15 +1,15 @@
 package info.androidhive.firebase;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.LinearLayout;
-import info.androidhive.firebase.R;
+
 import info.androidhive.firebase.state.FailedConnectionState;
 import info.androidhive.firebase.state.SuccessConnectionState;
 
 public class UserConnection extends AppCompatActivity {
 
-    private boolean connectionResult = false;
+    private boolean connectionResult = true;
     private LinearLayout connectionInfoContainer;
 
     @Override

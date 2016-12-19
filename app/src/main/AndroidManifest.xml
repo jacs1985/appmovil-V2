@@ -23,6 +23,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -46,23 +47,22 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MenuAppActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MenuList"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PizzaCustom"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".UserConnection"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ProductsList"
-            android:theme="@style/AppTheme.NoActionBar"/><!--!&#45;&#45; ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. &ndash;&gt;
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />-->
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuApp2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

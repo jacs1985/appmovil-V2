@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = inputEmail.getText().toString();
+                final String email = inputEmail.getText().toString();
                 final String password = inputPassword.getText().toString();
 
                 if (TextUtils.isEmpty(email)) {
@@ -99,14 +99,27 @@ public class LoginActivity extends AppCompatActivity {
                                         Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                                     }
                                 } else {
-                                    Intent intent = new Intent(LoginActivity.this, MenuAppActivity.class);
-                                    startActivity(intent);
-                                    finish();
-                                }
+                                        if (0==email.compareTo("asd1@asd.asd")){
+                                            Intent intent = new Intent(LoginActivity.this, MenuApp2Activity.class);
+                                            startActivity(intent);
+                                            //onPause();
+                                            finish();
+                                        } else {
+                                        Intent intent = new Intent(LoginActivity.this, MenuAppActivity.class);
+                                        startActivity(intent);
+                                        //onPause();
+                                            finish();
+                                        }
+                                    }
                             }
                         });
             }
         });
+    }
+    @Override
+    protected void onPause(){
+        super.onPause();
+        finish();
     }
 }
 
